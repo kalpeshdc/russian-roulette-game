@@ -1,0 +1,30 @@
+﻿<Page x:Class="DSD_01.view.PreGame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DSD_01.view"
+      mc:Ignorable="d"
+      d:DesignHeight="{DynamicResource {x:Static SystemParameters.FullPrimaryScreenHeightKey}}" 
+      d:DesignWidth="{DynamicResource {x:Static SystemParameters.FullPrimaryScreenWidthKey}}"
+      Title="PreGame">
+    <Page.Background>
+        <ImageBrush ImageSource="/DSD-01;component/resources/russian-roulette.jpg" Stretch="UniformToFill"/>
+    </Page.Background>
+
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Width="189" Height="146" Margin="88,102,523,202">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/DSD-01;component/resources/load-gun.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="LoadGun" Content="Load Gun" HorizontalAlignment="Center" VerticalAlignment="Center" Width="144" Height="40" FontSize="18" FontFamily="Global Serif" FontWeight="Bold" Click="LoadGun_Click" Margin="112,269,544,141"/>
+        <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Width="188" Height="146" Margin="518,102,94,202">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/DSD-01;component/resources/spin-gun-chamber.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="Spin" Content="Spin Chamber" HorizontalAlignment="Center" VerticalAlignment="Center" Width="144" Height="40" FontSize="18" FontFamily="Global Serif" FontWeight="Bold" Click="Spin_Click" Margin="546,265,110,145"/>
+        <Button x:Name="LetsPlay" Content="Let's Play" HorizontalAlignment="Center" VerticalAlignment="Center" Width="144" Height="40" FontSize="18" FontFamily="Global Serif" FontWeight="Bold" Click="LetsPlay_Click" Margin="328,351,328,59"/>
+    </Grid>
+</Page>
