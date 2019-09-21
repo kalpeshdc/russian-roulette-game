@@ -1,5 +1,7 @@
 # russian-roulette-game
 
+[![DepShield Badge](https://depshield.sonatype.org/badges/owner/repository/depshield.svg)](https://depshield.github.io)
+
 Russian Roulette Game in WAF
 
 ![SS1](screenshot/Screenshot-1.png)
